@@ -54,7 +54,49 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
+    content: "\f126";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.star-2,
+hr.star-primary-2 {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+
+hr.star-2:after,
+hr.star-primary-2:after {
+    content: "\f024";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.star-3,
+hr.star-primary-2 {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+
+hr.star-3:after,
+hr.star-primary-2:after {
+    content: "\f0e4";
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -77,6 +119,23 @@ hr.star-primary {
 }
 
 hr.star-primary:after {
+    color: #2c3e50;
+    background-color: #fff;
+}
+
+hr.star-2 {
+    border-color: #2c3e50;
+}
+
+hr.star-2:after {
+    color: #2c3e50;
+    background-color: #fff;
+}
+hr.star-3 {
+    border-color: #2c3e50;
+}
+
+hr.star-3:after {
     color: #2c3e50;
     background-color: #fff;
 }
