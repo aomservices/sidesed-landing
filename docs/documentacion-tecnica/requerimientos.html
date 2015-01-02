@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>3. Requerimientos del sistema &mdash; SIDESED 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.2.0/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+<style>
+
+#left-side {
+    position: fixed;
+    top: 60px;
+    padding: 2em;
+    height: 100%;
+    background: none repeat scroll 0% 0% #ECF0F1;
+}
+
+#content-block {
+    float:right;
+    margin-top:16px;
+    background: none repeat scroll 0% 0% #FFF;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px 5px #C9CCCD;
+    padding:1em;
+}
+
+footer{
+
+    width:400px;
+}
+
+.pager li > a, .pager li > span{
+    border-radius:0px;
+    background-color:#ECF0F1;
+}
+.pager a{
+    color:#2C3E50;
+}
+
+h1 {
+    font-size:30px;
+}
+h2 {
+    font-size:26px;
+}
+
+
+</style>
+
+
+<div id="left-side" class="col-sm-4 col-md-3">
+<br>
+<ul style="background:white" class="nav nav-pills nav-stacked">
+
+
+  <li class=" active  "><a href="/"><i class="fa fa-book"></i>
+ Documentación SIDESED
+</a></li>
+
+  <li><a href="manual-usuario.html"> <i class="fa fa-user"></i>
+ Manual de usuario
+</a></li>
+ <li><a href="/"><i class="fa fa-sliders"></i>
+
+ Manual del administrador
+</a></li>
+
+<li><a href="/"> <i class="fa fa-file-code-o"></i>
+
+ Documentación técnica
+</a></li>
+
+<li> <a href=""><i class="fa fa-lightbulb-o"></i> Features</a> </li>
+<li> <a href=""><i class="fa fa-life-ring"></i> Soporte Técnico</a> </li>
+<li> <a href="licencia.html"><i class="fa fa-gavel"></i> Licencia</a> </li>
+
+</ul>
+
+
+</div>
+
+
+
+
+<style>
+  .feedback {
+  display: block;
+  font-size:17px;
+  position: fixed;
+  top: 50%;
+  right: -50px;
+  background-color: #F39C12;
+  color: white;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  padding: 5px 10px;
+  text-decoration: none;
+  }
+  .feedback:hover{
+    color:white;
+    text-decoration: none;
+  }
+
+</style>
+<script>
+
+jQuery(document).ready(function($) {
+
+$('#fed').click(function(){
+  $('#modal').modal('show');
+  return false;
+})
+
+});
+
+</script>
+
+<a id="fed" href="#" class="feedback"> PREGUNTAS <i class="fa fa-question"></i></a>
+
+<div id="modal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">¿ Como podemos ayudarte ?</h4>
+      </div>
+
+      <div class="modal-body">
+      <form>
+        <fieldset>
+
+        <div class="form-group">
+        <label class="control-label" for="focusedInput">Pregunta</label>
+        <input class="form-control" id="focusedInput" placeholder="Pregunta corta"  type="text">
+        </div>
+
+        <div class="form-group">
+        <label for="textArea">Detalles</label>
+        <textarea class="form-control" placeholder="Describa con detalles su problema o pregunta" rows="3" id="textArea"></textarea>
+        </div>
+
+        <div class="form-group">
+        <div class="col-lg-6">
+            <label for="inputEmail">Tu correo</label>
+            <input class="form-control" id="inputEmail" placeholder="Te enviaremos un correo" type="text">
+          </div>
+          <div class="col-lg-6">
+            <label class="control-label" for="focusedInput">Tu nombre</label>
+            <input class="form-control" id="focusedInput" placeholder=""  type="text">
+          </div>
+        </div>
+
+        </div>
+      </fieldset>
+    </form>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
+      </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          <i class="fa fa-code-fork"></i> SIDESED.CO</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="http://cordoba.sidesed.co"><i class='fa fa-tachometer'></i> Plataforma</a></li>
+                <li><a href="http://cordoba.sidesed.co/foro"><i class='fa fa-bullhorn'></i> Foro</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html"><i class='fa fa-book'></i>  Docs <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../manual-usuario/index.html">Manual de usuario</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../manual-usuario/empezando.html">1. Empezando</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manual-usuario/conociendo-sidesed.html">2. Conociendo SIDESED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manual-usuario/ingresar-a-la-plataforma.html">3. ¿ Como ingreso a la plataforma ?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../manual-usuario/foros-de-discucion.html">4. Foros de discusión</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../manual-administrador/index.html">Manual del administrador</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Documentación Técnica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduccion.html">1. Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analisis.html">2. Ánalisis</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">3. Requerimientos del sistema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diccionario_datos.html">4. Diccionario de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagrama_ER.html">5. Diagrama entidad relación</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../soporte.html">Soporte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../licencia.html">Licencia</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div id="content-block" class="col-sm-7 col-md-9">
+
+
+
+<ul class="breadcrumb">
+  <li><a href="../index.html">Centro de ayuda</a></li>
+  
+<li><a href="index.html">Documentación Técnica</a> &raquo;</li>
+
+<li>3. Requerimientos del sistema</li>
+</ul>
+
+
+<ul  class="pager">
+  <li class="previous"><a href="analisis.html">← 2. Ánalisis</a></li>
+
+ <li class="next"><a href="diccionario_datos.html">4. Diccionario de datos →</a></li>
+
+</ul>
+
+
+    <div class="col-md-12">
+      
+  <div class="section" id="requerimientos-del-sistema">
+<h1>3. Requerimientos del sistema<a class="headerlink" href="#requerimientos-del-sistema" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="requerimientos-funcionales">
+<h2>3.1. Requerimientos Funcionales<a class="headerlink" href="#requerimientos-funcionales" title="Permalink to this headline">¶</a></h2>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">En esta sección se define lo que debe hacer el sistema, el sistema  se encuentra ordenado por modulos (un modulo se define como un conjunto de funcionalidades que tienen un fuerte entrelazamiento).</p>
+</div>
+<div class="section" id="modulo-planta">
+<h3>3.1.1. Modulo Planta<a class="headerlink" href="#modulo-planta" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>La información de la planta de pesonal debe ser detallada por especialidad, es decir, cada especialidad (Administrativo, Directivo, Docente) tendra una vista en el aplicativo esto con el fin de matener la informacíón ordenada.</li>
+<li>Ademas de discriminar la planta por especialización el sistema mostrara un detallado de toda la planta de personal ordenada por establecimiento y municipio.</li>
+<li>La información de la planta debe ser consolidada por el sistema de la siguiente manera:<ul>
+<li>Por Municipio</li>
+<li>Por Sede Principal</li>
+<li>Por Sede</li>
+<li>Por Novedad</li>
+</ul>
+</li>
+<li>El sistema ofecera interfazes para consulta, modificado, y creación de registros en la planta.</li>
+<li>Para la creación de registros el sistema estara disponible a traves de una plataforma web se dispondrá de un formulario para el registro por especializaciones del personal perteneciente a la planta (Administrativo, Docente, Directivo Docente).</li>
+<li>Se le preguntara al usuario que procede al registro de esta información que llene un formulario.</li>
+<li>El formulario ofrecera la selección de campos relacionados con la planta de personal  ya sea ( El Establecimiento, las novedades, Municipios, Estado) Entre otros atributos propios descritos en el <a href="#id1"><span class="problematic" id="id2">`dicionario de datos`_</span></a>.</li>
+<li>Una vez el usuario envia el formulario este es validado por el sistema.</li>
+<li>Dado el caso de una exepción de validación el aplicativo respondera con un mensaje al usuario indicandole los campos que tienen conflitos asi:<ul>
+<li>El sistema debe evaluar que el campo que refencia la persona en la planta no exista en el sistema, es decir, la cedula la cual es el identificador principal de una persona no puede existir más de una vez en el sistema.</li>
+<li>Para los campos que se consideren obligatorios se validarán y se le mostrará un mensaje  al usuario indicandole que debe llenar los campos.</li>
+</ul>
+</li>
+<li>Una vez se valida el formulario es guardado en la base de datos y pasa a ser consolidado automaticamente por el sistema, esta información debe ser mostrada por el sistema.</li>
+<li>El sistema registrará la fecha y hora del registro y lo podra listar, además cualquier cambio futuro sobre una persona de la planta será detallado por fecha y hora.</li>
+<li>Los detallados de la planta de personal trendran la funcionalidad de filtrar, se el usuario podra facilmente navegar por la información de la planta:<ul>
+<li>Por Novedades</li>
+<li>Por Municipio</li>
+<li>Por Estado</li>
+<li>Por Sede Principal</li>
+</ul>
+</li>
+<li>En el sistema el Usuario podra buscar una persona de planta ya sea por Cedula, por Nombres y/o Apellidos, luego ingresar a su registro para cambiar cualquier campo de este, por ejemplo cambiar sus novedades eliguiendo una o más de una.</li>
+</ul>
+</div>
+<div class="section" id="modulo-establecimientos">
+<h3>3.1.2. Modulo Establecimientos<a class="headerlink" href="#modulo-establecimientos" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>La información de los establecimientos educativos debera ser detallada por municipio.</li>
+<li>Los establecimientos tienen dos especialidades (Principal y Sede), el sistema ofrecera la relación entre sedes, la Principal puede tener más de una Sede asociada.</li>
+<li>Al navegar por el listado de Establecimientos el Usuario podra ver la planta relacionada a este.</li>
+<li>El Usuario podra registrar nuevos establecimientos a traves de un aplicativo web, este dispondra de los campos a llenar en un formulario.</li>
+<li>El sistema validara la información ingresada en el formulario, garantizando que no existan establecimientos duplicados por su llave principal la cual es el DANE.</li>
+<li>El sistema cosolidara la cantidad de Establecimientos por Municipio</li>
+<li>Con el detallado de Establecimientos el Usuario podra filtrar y saber los establecimeintos que presentan Dificil Acceso o por Tipo de Población.</li>
+<li>Los establecimientos seran sistematizados con sus atributos propios, tales como rector, correo electronico entre otros descritos en el diccionario de datos.</li>
+<li>En el sistema el usuario podra buscar un Establecimiento ya sea por su DANE o Nombre.</li>
+</ul>
+</div>
+<div class="section" id="modulo-novedades">
+<h3>3.1.3. Modulo Novedades<a class="headerlink" href="#modulo-novedades" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Seran listadas con su código y descripción</li>
+<li>Se podra navegar en las novedades para listar las personas de la planta que esten asociadas a ellas.</li>
+<li>El sistema sera capaz de consolidar la cantidad de personas de la planta por novedades, ejemplo: el usuario sabrá cuantos Docentes estan sin carga academica o cuantos han sido trasladados.</li>
+<li>El Usuario autorizado podra registar nuevas noveades indicando la descripción de esta en un formulario.</li>
+<li>El sistema debe ofrecer un espacio para consolidar las novedades por municipio y establecimiento.</li>
+</ul>
+</div>
+<div class="section" id="modulo-usuarios">
+<h3>3.1.4. Modulo Usuarios<a class="headerlink" href="#modulo-usuarios" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>El sistema tendra Usuarios con multiples roles todos tendran asociados un correo, un nombre de usuario y una contraseña asi como el establecimiento al que pertenece.</li>
+<li>Cada usuario tendra un perfil donde este podra administrar su cuenta, podra alimentarlo con sus nombres, apellidos y foto.</li>
+</ul>
+</div>
+<div class="section" id="seguridad-y-permisos">
+<h3>3.1.5. Seguridad y permisos<a class="headerlink" href="#seguridad-y-permisos" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Se le preguntará al usuario que ingrese sus credenciales para que pueda se autenticado por el sistema, si y solo si son validas el sistema concedera acceso consultar, modificar y crear información en el sitema.</li>
+<li>El sistema ofrecera la creación de multiples roles de usuario con varios niveles de permisos, los tipos de usuario son(Administrador, Rectores, Digitatores, Secretaría de Educación )</li>
+<li>Los niveles de persimos seran de la siguiente manera:
+- Permisos de modificar
+- Permisos para consultar
+- Permisis para crear
+- Permisos para eliminar</li>
+<li>Los permisos antes mencionados puede ser a nivel de modelo y a nivel de resgistros, es decir, cuando el permiso es definido a nivel de modelo tiene permisos globales todo el conjunto, cuando es a nivel de registros solo tiene permisos sobre subconjunto definido de registros, ejemplo: Un rector que se le delegan permisos solo para ver y modificar registros relacionados con su establecimiento.</li>
+</ul>
+</div>
+<div class="section" id="modulo-foro">
+<h3>3.1.6. Modulo Foro<a class="headerlink" href="#modulo-foro" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>El sitema tendra integrado un modulo que facilite la comunicación de lo rectores con la Secretaría de Educación este modululo contará con las siguientes funcionalidades:</li>
+<li>Los usuarios administradores podrán publicar temas que pueden ir asociados con un instructivo para su descarga de parte del Usuario Rector, se le indicará un titulo, un comentario.</li>
+<li>Todos los temas seran listados en una interfaz donde los usuarios rectores podran navegar por ellos.</li>
+<li>Cada tema pude ser comentado por los Usuarios Rectores.</li>
+<li>En los comentarios se puede ingresar texto plano con algunas opciones de formateo como son (cursiva, negrita, listas y links) tambien se puden subir imagenes.</li>
+<li>El administrador del foro podra organizar los temas por categorias.</li>
+<li>Cada tema ofrece estadisticas como son: cantidad de comentarios del tema, cantidad de veces que se ha visto el tema.</li>
+<li>Cada comentario pueder ser respondido o citado  por otro usuario.</li>
+<li>Los usuarios podran indicar si les gusta un comentario o repotar al administrador si el comentario es inapropiado.</li>
+<li>Todos los movimientos del foro como publicación de temas y comentarios son registrados con su fecha.</li>
+<li>El administrador podrá eliminar temas, cerrar temas o ancar temas, asi:<ul>
+<li>Eliminar: No se muestra a los usuarios, pero permanece en la base de datos (puede ser restaurado por el administrador)</li>
+<li>Cerrar: Indica que el tema ya no esta mas en discución  y el sistema lo muestra a los usuarios pero indica  que esta cerrado y no permite mas comentarios.</li>
+<li>Anclar : Esta funcionalidad permite darle reelenvancia a un tema en particular situandolo en el topoe de la lista de temas que ve el usuario.</li>
+</ul>
+</li>
+<li>Para los usuarios particiantes del foro el sistema ofrecera una serie de funcionlidades como son:<ul>
+<li>El sistema le alertará al usuario sobre movientos en el foro, es decir, si el usuario participio en un tema el sistema le inidcara que alguen le respondio o lo menciono en un comentario en perteneciente a ese tema.</li>
+<li>El sitema le ofrecerá al usuario un lista de respuestas de temas sin leer garantizando que el Rector permanesca al tanto de lo que ocurre en el foro.</li>
+<li>Tendran un perfil donde se muestra su establecimiento, su correo, fecha de ultimo ingreso al foro y sus nombres y apellidos.</li>
+<li>Ademas en el pefil tendran un listado de todos los comentarios que ha realizado en el foro, los temas en los que particia y los comentarios que ha marcado como &#8220;me gusta&#8221;.</li>
+</ul>
+</li>
+<li>Para usuarios Administradores del foro se les mostrara un panel donde se consolida las estadisticas del foro, asi:
+- El numero de miembros del foro.
+- El número de temas.
+- El número de comentarios.
+- El número de &#8220;me gusta&#8221;.
+- El número de reportes (comentarios inadecuados)
+- El número de categorias.</li>
+<li>La información del foro tambien podra ser detallada (solo para el administrador)  de la siguiente manera:<ul>
+<li>Listado de temas: se puede filtrar por eliminados, cerrados y anclados</li>
+<li>Listado de usuarios: se pueden filtrar por Administradores, Mods e Inactivos, tambien permite la opcion de edición de usuarios.</li>
+<li>Reportes: Muestra una lista de reportes abiertos y cerrados.</li>
+<li>Listado de categorias: Muestra todos los temas pertenecientes a una categoria.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="reportes">
+<h3>3.1.7. Reportes<a class="headerlink" href="#reportes" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Los usuarios recotes tendrán la capacidad de enviar reportes de 3 maneras:</p>
+<ul>
+<li><p class="first">Reporte de necesidad: se le muestra un formulario al rector indicandole que llene el tipo
+de necesidad (de administrativo, docente o directivo) y ponga la cantidad requerida, esto se guarda en el sistema automaticamente con su establecimiento respectivo.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Reporte de estudiantes: Por medio de un formulario se le pide al usurio que indique el grado,</dt>
+<dd><p class="first last">el numero de estudiantes y la fecha de corte.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Reporte de archivos: Por medio de un formulario se le pide al usuario que indique el titulo del</dt>
+<dd><p class="first last">archivo y elija el archivo a subir desde su computadora.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</li>
+<li><p class="first">Los reportes antes mencionados seran detallados y consolidados por establecimeinto.</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Cabe mencionar que tanto reportes como comentarios se hacen en base a usuarios autenticados, es decir,  el sistema  puede saber a que establecimiento asociar esta información en base a la jeraquia de su usuario lo que evita que un usuario reporte necesidades, estudiantes, archivos o comente en el foro a nombre de otro.</p>
+</div>
+</div>
+</div>
+<div class="section" id="requerimientos-no-funcionales">
+<h2>3.2. Requerimientos No Funcionales<a class="headerlink" href="#requerimientos-no-funcionales" title="Permalink to this headline">¶</a></h2>
+<p>Descripción de las cualidades del sistema</p>
+<div class="section" id="acceso-y-disponibilidad">
+<h3>3.2.1. Acceso y disponibilidad<a class="headerlink" href="#acceso-y-disponibilidad" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Todo el sistema podra ser accedido a traves de web en esta url : <a class="reference external" href="http://cordoba.sidesed.co">http://cordoba.sidesed.co</a></li>
+<li>El sistema debera disponible a cualquier hora, cualquier dia. (Excepto dias de mantenimiento)</li>
+</ul>
+</div>
+<div class="section" id="rapidez">
+<h3>3.2.2. Rapidez<a class="headerlink" href="#rapidez" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Cuando  se encuentren accediento 400 Usurios simulataneamente al sistema el tiempo de respuesta no será en ningun momento superior a 4 segundos.</li>
+</ul>
+</div>
+<div class="section" id="estabilidad-y-seguridad">
+<h3>3.2.3. Estabilidad y Seguridad<a class="headerlink" href="#estabilidad-y-seguridad" title="Permalink to this headline">¶</a></h3>
+<p>Las especificaciones mínimas necesarias para  la estabilidad del sistema, dominio y seguridad sobre información asi como para que este pueda mantener una capacidad de respuesta adecuada el servidor debe contar con  las siguientes especificaciones:</p>
+<ul class="simple">
+<li>S.O, Linux Ubuntu Server 12.04</li>
+<li>Acceso remoto por SSH</li>
+<li>4 GB RAM</li>
+<li>2 CPUs</li>
+<li>60 GB SSD Disco Duro</li>
+<li>4 TB de Transferencia</li>
+</ul>
+<p>La información de la base de datos debe estar protegia de acceso a terceros por eso el sistema debe funcionar bajo un servidor privado.</p>
+</div>
+<div class="section" id="usabilidad">
+<h3>3.2.4. Usabilidad<a class="headerlink" href="#usabilidad" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Un usuario experimentado debe ser capaz de utilizar todas las funciones del sistema luego de un entrenamiento de 3 horas, esto gracias a las interfces intuitivas que ofrece el sistema.</li>
+</ul>
+</div>
+<div class="section" id="productividad">
+<h3>3.2.5. Productividad<a class="headerlink" href="#productividad" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>El sistema tiene herramientas especiales que aumentan la productividad en la gestión de la información del sistema,</li>
+</ul>
+<p>estas caracteristicas pueden ahorrar horas de trabajo al digitador cuando se quiere hacer cambios en conjunto por ejemplo, todas esta herramientas estan descritas una sección del manual de usuario, o en la refencia rapida &#8220;features&#8221;.</p>
+</div>
+<div class="section" id="escalabilidad">
+<h3>3.2.6. Escalabilidad<a class="headerlink" href="#escalabilidad" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>el sistema es modular, programado bajo una arquitectura flexible lo que permite integración de nuevas funcionalidades o nuevos modulos que provoquen un crecimiento en la complejidad del sistema.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+    </div>
+
+    
+    <hr class="docutils"> </hr>
+
+            <ul class="pager">
+  <li class="next"><a href="diccionario_datos.html">4. Diccionario de datos →</a></li>
+
+</ul>
+
+
+    
+
+
+  </div>
+
+</div>
+
+<div id="content-block" class="col-sm-7 col-md-9">
+
+
+<p>
+&copy; Copyright 2014, UZI CORPORATION.<br/>
+</p>
+
+</div>
+  </body>
+</html>

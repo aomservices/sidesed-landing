@@ -1,0 +1,19 @@
+=================
+Manual de usuario
+=================
+
+
+SIDESED es un aplicativo web moderno diseñado para que sea facil de usar, en el siguiente manual se guia paso a paso al usuario  para que conosca las herramientas y aprenda a utilizarlas de forma agíl.
+
+
+
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   empezando
+   conociendo-sidesed
+   ingresar-a-la-plataforma
+   foros-de-discucion
+
+----------

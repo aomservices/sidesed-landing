@@ -1,0 +1,6 @@
+Diagrama entidad relación
+=========================
+
+
+.. image:: /img/fig_2_entidad_relacion.svg
+

@@ -1,0 +1,71 @@
+===================
+Conociendo SIDESED
+===================
+
+Desde este sitio de aterrizaje usted podra informarse y obtener enlaces a todos los `servicios que ofrece SIDESED`_, por eso es importante que usted se relacione con el, veamos como acceder:
+
+
+.. _`servicios que ofrece SIDESED`: manual-usuario-empezando.html
+
+En su navegador teclee la dirección : `sidesed.co`_
+
+.. image:: /img/fig_3_url_sidesed.png
+
+El navegador visualizara lo siguiente:
+
+----
+
+
+.. image:: /img/fig_4_landing.png
+
+----
+
+Las **Opciones** disponibles son:
+
+1. Sobre el proyecto -> *Documentación y soporte*
+
+2. Ingreso -> *Enlace de ingreso a la plataforma*
+
+3. Secretaría de educación -> *Enlaces de interés*
+
+Al hacer click en una de las opciones sera desplazado a esa sección.
+
+Si prefiere ir leyendo todo simplemente desplazar hacia abajo pusaldo el boton **Desplazmiento** o con la barra de desplazamiento del navegador.
+
+----
+
+Sobre el Proyecto
+-----------------
+
+En esta sección usted visualizará información general sobre el proyecto, información sobre sus ejecutores, enlaces a la documentación(manuales de usuario) y soporte para usuarios de de SIDESED.
+
+----
+
+.. image:: /img/fig_5_landing_about.png
+
+
+----
+
+Ingreso
+-------
+
+En esta sección usted tendra un enlace a la plataforma donde estan servicios como los foros de discución y las aplicativos para la gestión de la planta de personal
+
+----
+
+.. image:: /img/fig_6_landing_sign_in.png
+
+----
+
+Secreatría de educación
+-----------------------
+
+En esta sección encontra información de la secretaria de educación departamental y enlace a otros sitios de interés.
+
+----
+
+.. image:: /img/fig_7_landing_secre.png
+
+----
+
+.. _sidesed.co: http://sidesed.co

@@ -1,0 +1,33 @@
+
+Ánalisis
+========
+
+De acuerdo al problema planteado y a los porpositos que el sistema debe cumplir, se especifican acotinuación los requerimientos y la forma como el Usuario interactura con este, los requermientos se clasifican en funcionales y no funcionales, los primeros definen todo lo que el usuario final espera que el sistema realize o los servicios que el sistema proveerá, en cuanto a los requerimietos **no** funcionales es la forma **como el usuario espera que se comporte el sistema** o las cualidades de este.
+
+Diagrama de contexto
+---------------------
+
+A grandes rasgos el sistema debera cumplir con las entradas y salidas de información, asi como con las interacciones del usuario con el sistema ilustradas en la **Fig.1**
+
+.. image:: /img/fig_1_contexto.png
+
+
+Los 4 tipos de usuarios pueden ser gestionados desde el sistema, cada uno tendra sus respectivos roles y permisos, asi:
+
++ **Secretaria de Educación**: SuperUsuario, todos los permisos sobre el sistema, puede eliminar, crear, consultar toda la información del sistema, tambien puede crear nuevos usuarios y asignarle su rol.
++ **Rectores**: Inicialemnte parcipan en los foros y hacen reportes a traves del sistema (si la secretaria los autoriza pueden administrar la planta de su establecimeinto al nivel que esta desee,)
++ **Administrador** : Puede ser un delegado de la secretaría que obtega algunos permisos de uso común, como crear temas en los foros o autorizar a otros usuarios.
++ **Digitador** : Se requieren personas que alimenten y actulizen el sistema estos usuarios tendrán las facultades que la secretaria considere pertienente.
+
+
+
+
+
+
+
+
+.. _dicionario de datos: que_hace.html#diccionario-de-datos
+
+.. raw:: html
+
+   <style> .wy-side-nav-search {background-color:#149C82;} </style>

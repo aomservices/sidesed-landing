@@ -1,0 +1,95 @@
+===================
+Foros de discusión
+===================
+
+Es servicio esta dirijido a los directivos y rectores de los establecimientos, una vez logro ingresar a la plataforma web dirijase a la opcion foro ubicada en el menu superior, así:
+
+.. image:: /img/fig_9_opcion_foro.png
+
+-------
+
+Usted visualizara la lista de temas disponibles organizados del tal forma que se muestran primero los más recientes.
+
+------
+
+.. image:: /img/fig_10_temas_foro.png
+
+--------
+
+¿ Que es un tema ?
+------------------
+
+Un tema es cada publicación que hace el administrador para que los usuarios converjan y puedan obtener recursos, actividades, tareas y discutir sobre ellas.
+
+En la sección foro usted podra navegar por cada uno de ellos, cuando se decida por uno haga click en el titulo y se mostrarán los detalles, vera esto:
+
+--------
+
+.. image:: /img/fig_11_tema_foro.png
+
+--------
+
+Se mostrara información y estadisticas sobre el tema como la fecha, el numero de personas que han comentado, entre otros.
+
+En el tema usted podra realizar 2 acciones:
+
++ Descargar el instructivo del tema en cuestión.
+
++ Enviar un archivo con la resolución de la tarea descrita en el tema.
+
+
+En la parte inferior usted encontrara un listado de los participaciones o comentarios de los usuarios en el tema, siempre que el tema este abierto usted podra participar comentado.
+
+
+--------
+
+¿ Como participo en un tema?
+----------------------------
+
+Dirijase a la parte inferior(último comentario), alli encontrará una caja de texto:
+
+----
+
+.. image:: /img/fig_12_comentario_foro.png
+
+----
+
+Podra escibir su cometario e indicarle formato como en cualquier editor de texto, además podra subir imagenés, cuando este listo su comentario pusle el boton publicar.
+
+----
+
+¿ Puedo ser social en los foros?
+--------------------------------
+
+Si, la experiencia en los foros de SIDESED el es muy parecida a la de una red social, aprovechemos todo su potencial y  veamos la opciones que ofrece:
+
+
+.. image:: /img/fig_13_ops_comentario_foro.png
+
+
+Opciones:
+
++ Me gusta: para valorar un comentario
++ Citar:   Si quieres citar un comentario de otro usuario en el tuyo.
++ Reportar: Si crees que un comentario es inapropiado puedes reportarlo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

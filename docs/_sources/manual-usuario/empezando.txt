@@ -1,0 +1,77 @@
+=========
+Empezando
+=========
+
+Antes de ir a la practica es bueno conocer que compone SIDESED sus servicios y recursos, asi como los requisitos que debes cumplir como usuario.
+
+
+
+¿Que compone SIDESED?
+~~~~~~~~~~~~~~~~~~~~~
+
+SIDESED esta compuesto de 3 sitios con varios fines:
+
++ Sitio de aterrizaje publico, su proposito es ser informativo.
+
++ Sito de acceso al aplicativo web y a los foros.
+
++ Este sitio donde se alojan guias de uso y se presta soporte a los usuarios de SIDESED.
+
+
+¿Que servicios ofrece la plataforma?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Si usted es rector o directivo de su insticución usted podra usar la plataforma para participar en los **foros de discución**, alli encontrará temas, instructivos para descarga, podra enviar tareas, comentar, tener un perfil lleando por usted, entre otras posibilidades dependiendo lo que decida el administrador del sistema.
+
+Por otro lado si usted es quien administra la planta de personal podra ver, eliminar, crear información de establecimientos educativos y administrar las noveades de los administartivos, docentes y directivos.
+
+de forma resumida la plataforma le permite :
+
++ Gestionar la planta de personal
+
++ Reportar noveades
+
++ Asociar información a establecimientos y su planta de personal
+
++ Descargar y subir tareas
+
++ Organizar toda la información por municipio y establecimiento.
+
++ Cosolidar y detallar información
+
++ Comunicarse a traves de foros de discución.
+
+
+`Ver lista completa de servicios`_
+
+
+
+
+¿ Que requisitos debo cumplir?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Para que el usuario pueda utilizar SIDESED debe cumplir con los siguientes requisitos:
+
++ Cualquier dispositivo (Movil, PC) con acceso a Internet.
+
++ Cualquier Sistema Operativo (Linux, Windows, Mac entre otos).
+
++ Un navegador Web moderno (Chrome, Firefox, IE entre otros).
+
++ Permiso de la Secretaría de Eduación (Usuario y contraseña).
+
+
+-------
+
+**Preguntas Comunes**
+
+`¿No tengo un usuario que debo hacer?`_
+
+`¿Enserio puedo usar mi telefono movil?`_
+
+------
+
+
+
+

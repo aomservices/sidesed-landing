@@ -1,0 +1,50 @@
+Licencia
+========
+
+Última modificación: [24/12/2014]
+
+Estas son las codiciones del uso del software el cual fue realizado para satifacer las necesidades concretas del cliente-licenciatario, asi por el siguiente contrato se establecen los siguiente términos:
+
+Términos
+--------
+
+**A.** UZI CORPORATION es propietaria de la licencia del software conocido como "SIDESED.CO" el cual funciona como plataforma web que permite la sistematización de la información de la planta de personal de establecimientos educativos, gestión de novedades, reportes y foros de comunicación entre usuarios.
+
+**B.** EL PROPIETARIO DE LA LICENCIA es la Secretaria de Educación Departamental que opera en la Gobernación de Córdoba y desea obtener una licencia para utilizar SIDESED a traves de Internet.
+
+**C.** UZI CORPORATION Y EL PROPIETARIO DE LA LICENCIA acueardan que los derechos del PROPIETARIO DE LA LICENCIA con respecto al software se limitan al derecho de uso del software para ciertos propositos y sujetos a las limitaciones que se describen en este acuerdo y que los derechos de UZI CORPORATION como unico propietario del software serán respetados.
+
+AHORA, POR LO TANTO, en consideración del otorgamiento, por UZI CORPORATION, al acceso del software por Internet al PROPIETARIO DE LA LICENCIA del software objeto de este acuerdo de licencia "Acuerdo" y en consideración a promesas mutuas, las partes acuerdan lo siguiente:
+
+
+Acuerdo
+-------
+
+1. Otogramiento de la licencia
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**1.1** UZI CORPORATION otorga al PROPIETARIO DE LA LICENCIA una licencia no exclusiva, intrasferible y de uso indefinido para utilizar el software a traves de internet, sujetos a los términos y condiciones de deste acuerdo.
+
+*1.2** El PROPIETARIO DE LA LICENCIA tendrá derecho al acceso y usará el software sobre sus propias premisas solamente para la gestión de la planta de personal de los establecimientos educativos. El PROPIETARIO DE LA LICENCIA no tendrá derechos de uso del Software para implementarlo en otra entidad o distribuirlo en cualquier otro lugar.
+
+**1.3** El PROPIETARIO DE LA LICENCIA reconoce que UZI CORPORATION es propietaria de todos los derechos, títulos e intereses puestos sobre el Softwate y que el El PROPIETARIO DE LA LICENCIA no posee ningún derecho a otorgar licencias por cuenta propia, asignar o transferir el Software o cualquiera de sus derechos consignados en este Acuerdo.
+
+
+2. Derechos de Autor
+~~~~~~~~~~~~~~~~~~~~
+
+El Software y la Documentación contienen material que está protegido por la Ley de Derechos de Autor de Colombia. Todos los derechos que no se le concedan en el presente documento están expresamente reservados por UZI CORPORATION.
+
+
+
+.. raw:: html
+
+    <style>
+            .wy-side-nav-search {
+              background-color:#149C82;
+            }
+            a {
+              color: #18BC9C;
+              text-decoration: none;
+            }
+   </style>

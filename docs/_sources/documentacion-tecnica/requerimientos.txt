@@ -1,0 +1,246 @@
+Requerimientos del sistema
+==========================
+
+
+Requerimientos Funcionales
+--------------------------
+
+.. tip:: En esta sección se define lo que debe hacer el sistema, el sistema  se encuentra ordenado por modulos (un modulo se define como un conjunto de funcionalidades que tienen un fuerte entrelazamiento).
+
+
+
+Modulo Planta
+~~~~~~~~~~~~~
+
++ La información de la planta de pesonal debe ser detallada por especialidad, es decir, cada especialidad (Administrativo, Directivo, Docente) tendra una vista en el aplicativo esto con el fin de matener la informacíón ordenada.
+
++ Ademas de discriminar la planta por especialización el sistema mostrara un detallado de toda la planta de personal ordenada por establecimiento y municipio.
+
++ La información de la planta debe ser consolidada por el sistema de la siguiente manera:
+
+  - Por Municipio
+  - Por Sede Principal
+  - Por Sede
+  - Por Novedad
+
++ El sistema ofecera interfazes para consulta, modificado, y creación de registros en la planta.
+
++ Para la creación de registros el sistema estara disponible a traves de una plataforma web se dispondrá de un formulario para el registro por especializaciones del personal perteneciente a la planta (Administrativo, Docente, Directivo Docente).
+
++ Se le preguntara al usuario que procede al registro de esta información que llene un formulario.
+
++ El formulario ofrecera la selección de campos relacionados con la planta de personal  ya sea ( El Establecimiento, las novedades, Municipios, Estado) Entre otros atributos propios descritos en el `dicionario de datos`_.
+
++ Una vez el usuario envia el formulario este es validado por el sistema.
+
++ Dado el caso de una exepción de validación el aplicativo respondera con un mensaje al usuario indicandole los campos que tienen conflitos asi:
+
+  - El sistema debe evaluar que el campo que refencia la persona en la planta no exista en el sistema, es decir, la cedula la cual es el identificador principal de una persona no puede existir más de una vez en el sistema.
+
+  - Para los campos que se consideren obligatorios se validarán y se le mostrará un mensaje  al usuario indicandole que debe llenar los campos.
+
++ Una vez se valida el formulario es guardado en la base de datos y pasa a ser consolidado automaticamente por el sistema, esta información debe ser mostrada por el sistema.
+
++ El sistema registrará la fecha y hora del registro y lo podra listar, además cualquier cambio futuro sobre una persona de la planta será detallado por fecha y hora.
+
++ Los detallados de la planta de personal trendran la funcionalidad de filtrar, se el usuario podra facilmente navegar por la información de la planta:
+
+  - Por Novedades
+  - Por Municipio
+  - Por Estado
+  - Por Sede Principal
+
++ En el sistema el Usuario podra buscar una persona de planta ya sea por Cedula, por Nombres y/o Apellidos, luego ingresar a su registro para cambiar cualquier campo de este, por ejemplo cambiar sus novedades eliguiendo una o más de una.
+
+
+Modulo Establecimientos
+~~~~~~~~~~~~~~~~~~~~~~~
+
++ La información de los establecimientos educativos debera ser detallada por municipio.
+
++ Los establecimientos tienen dos especialidades (Principal y Sede), el sistema ofrecera la relación entre sedes, la Principal puede tener más de una Sede asociada.
+
++ Al navegar por el listado de Establecimientos el Usuario podra ver la planta relacionada a este.
+
++ El Usuario podra registrar nuevos establecimientos a traves de un aplicativo web, este dispondra de los campos a llenar en un formulario.
+
++ El sistema validara la información ingresada en el formulario, garantizando que no existan establecimientos duplicados por su llave principal la cual es el DANE.
+
++ El sistema cosolidara la cantidad de Establecimientos por Municipio
+
++ Con el detallado de Establecimientos el Usuario podra filtrar y saber los establecimeintos que presentan Dificil Acceso o por Tipo de Población.
+
++ Los establecimientos seran sistematizados con sus atributos propios, tales como rector, correo electronico entre otros descritos en el diccionario de datos.
+
++ En el sistema el usuario podra buscar un Establecimiento ya sea por su DANE o Nombre.
+
+
+Modulo Novedades
+~~~~~~~~~~~~~~~~
+
++ Seran listadas con su código y descripción
+
++ Se podra navegar en las novedades para listar las personas de la planta que esten asociadas a ellas.
+
++ El sistema sera capaz de consolidar la cantidad de personas de la planta por novedades, ejemplo: el usuario sabrá cuantos Docentes estan sin carga academica o cuantos han sido trasladados.
+
++ El Usuario autorizado podra registar nuevas noveades indicando la descripción de esta en un formulario.
+
++ El sistema debe ofrecer un espacio para consolidar las novedades por municipio y establecimiento.
+
+
+Modulo Usuarios
+~~~~~~~~~~~~~~~
+
++ El sistema tendra Usuarios con multiples roles todos tendran asociados un correo, un nombre de usuario y una contraseña asi como el establecimiento al que pertenece.
+
++ Cada usuario tendra un perfil donde este podra administrar su cuenta, podra alimentarlo con sus nombres, apellidos y foto.
+
+
+Seguridad y permisos
+~~~~~~~~~~~~~~~~~~~~
+
++ Se le preguntará al usuario que ingrese sus credenciales para que pueda se autenticado por el sistema, si y solo si son validas el sistema concedera acceso consultar, modificar y crear información en el sitema.
+
++ El sistema ofrecera la creación de multiples roles de usuario con varios niveles de permisos, los tipos de usuario son(Administrador, Rectores, Digitatores, Secretaría de Educación )
+
++ Los niveles de persimos seran de la siguiente manera:
+  - Permisos de modificar
+  - Permisos para consultar
+  - Permisis para crear
+  - Permisos para eliminar
+
++ Los permisos antes mencionados puede ser a nivel de modelo y a nivel de resgistros, es decir, cuando el permiso es definido a nivel de modelo tiene permisos globales todo el conjunto, cuando es a nivel de registros solo tiene permisos sobre subconjunto definido de registros, ejemplo: Un rector que se le delegan permisos solo para ver y modificar registros relacionados con su establecimiento.
+
+
+Modulo Foro
+~~~~~~~~~~~
+
++ El sitema tendra integrado un modulo que facilite la comunicación de lo rectores con la Secretaría de Educación este modululo contará con las siguientes funcionalidades:
+
++ Los usuarios administradores podrán publicar temas que pueden ir asociados con un instructivo para su descarga de parte del Usuario Rector, se le indicará un titulo, un comentario.
+
++ Todos los temas seran listados en una interfaz donde los usuarios rectores podran navegar por ellos.
+
++ Cada tema pude ser comentado por los Usuarios Rectores.
+
++ En los comentarios se puede ingresar texto plano con algunas opciones de formateo como son (cursiva, negrita, listas y links) tambien se puden subir imagenes.
+
++ El administrador del foro podra organizar los temas por categorias.
+
++ Cada tema ofrece estadisticas como son: cantidad de comentarios del tema, cantidad de veces que se ha visto el tema.
+
++ Cada comentario pueder ser respondido o citado  por otro usuario.
+
++ Los usuarios podran indicar si les gusta un comentario o repotar al administrador si el comentario es inapropiado.
+
++ Todos los movimientos del foro como publicación de temas y comentarios son registrados con su fecha.
+
++ El administrador podrá eliminar temas, cerrar temas o ancar temas, asi:
+
+  - Eliminar: No se muestra a los usuarios, pero permanece en la base de datos (puede ser restaurado por el administrador)
+  - Cerrar: Indica que el tema ya no esta mas en discución  y el sistema lo muestra a los usuarios pero indica  que esta cerrado y no permite mas comentarios.
+  - Anclar : Esta funcionalidad permite darle reelenvancia a un tema en particular situandolo en el topoe de la lista de temas que ve el usuario.
+
+
++ Para los usuarios particiantes del foro el sistema ofrecera una serie de funcionlidades como son:
+
+  - El sistema le alertará al usuario sobre movientos en el foro, es decir, si el usuario participio en un tema el sistema le inidcara que alguen le respondio o lo menciono en un comentario en perteneciente a ese tema.
+
+  - El sitema le ofrecerá al usuario un lista de respuestas de temas sin leer garantizando que el Rector permanesca al tanto de lo que ocurre en el foro.
+
+  - Tendran un perfil donde se muestra su establecimiento, su correo, fecha de ultimo ingreso al foro y sus nombres y apellidos.
+
+  - Ademas en el pefil tendran un listado de todos los comentarios que ha realizado en el foro, los temas en los que particia y los comentarios que ha marcado como "me gusta".
+
+
++ Para usuarios Administradores del foro se les mostrara un panel donde se consolida las estadisticas del foro, asi:
+  - El numero de miembros del foro.
+  - El número de temas.
+  - El número de comentarios.
+  - El número de "me gusta".
+  - El número de reportes (comentarios inadecuados)
+  - El número de categorias.
+
++ La información del foro tambien podra ser detallada (solo para el administrador)  de la siguiente manera:
+
+  - Listado de temas: se puede filtrar por eliminados, cerrados y anclados
+  - Listado de usuarios: se pueden filtrar por Administradores, Mods e Inactivos, tambien permite la opcion de edición de usuarios.
+  - Reportes: Muestra una lista de reportes abiertos y cerrados.
+  - Listado de categorias: Muestra todos los temas pertenecientes a una categoria.
+
+
+Reportes
+~~~~~~~~
+
++ Los usuarios recotes tendrán la capacidad de enviar reportes de 3 maneras:
+
+  - Reporte de necesidad: se le muestra un formulario al rector indicandole que llene el tipo
+    de necesidad (de administrativo, docente o directivo) y ponga la cantidad requerida, esto se guarda en el sistema automaticamente con su establecimiento respectivo.
+
+  - Reporte de estudiantes: Por medio de un formulario se le pide al usurio que indique el grado,
+        el numero de estudiantes y la fecha de corte.
+
+  - Reporte de archivos: Por medio de un formulario se le pide al usuario que indique el titulo del
+        archivo y elija el archivo a subir desde su computadora.
+
++ Los reportes antes mencionados seran detallados y consolidados por establecimeinto.
+
+
+.. note:: Cabe mencionar que tanto reportes como comentarios se hacen en base a usuarios autenticados, es decir,  el sistema  puede saber a que establecimiento asociar esta información en base a la jeraquia de su usuario lo que evita que un usuario reporte necesidades, estudiantes, archivos o comente en el foro a nombre de otro.
+
+
+Requerimientos No Funcionales
+-----------------------------
+
+Descripción de las cualidades del sistema
+
+
+Acceso y disponibilidad
+~~~~~~~~~~~~~~~~~~~~~~~
+
++ Todo el sistema podra ser accedido a traves de web en esta url : http://cordoba.sidesed.co
+
++ El sistema debera disponible a cualquier hora, cualquier dia. (Excepto dias de mantenimiento)
+
+Rapidez
+~~~~~~~
+
++ Cuando  se encuentren accediento 400 Usurios simulataneamente al sistema el tiempo de respuesta no será en ningun momento superior a 4 segundos.
+
+
+Estabilidad y Seguridad
+~~~~~~~~~~~~~~~~~~~~~~~
+Las especificaciones mínimas necesarias para  la estabilidad del sistema, dominio y seguridad sobre información asi como para que este pueda mantener una capacidad de respuesta adecuada el servidor debe contar con  las siguientes especificaciones:
+
++ S.O, Linux Ubuntu Server 12.04
++ Acceso remoto por SSH
++ 4 GB RAM
++ 2 CPUs
++ 60 GB SSD Disco Duro
++ 4 TB de Transferencia
+
+
+
+La información de la base de datos debe estar protegia de acceso a terceros por eso el sistema debe funcionar bajo un servidor privado.
+
+
+Usabilidad
+~~~~~~~~~~
+
++ Un usuario experimentado debe ser capaz de utilizar todas las funciones del sistema luego de un entrenamiento de 3 horas, esto gracias a las interfces intuitivas que ofrece el sistema.
+
+
+Productividad
+~~~~~~~~~~~~~
+
++ El sistema tiene herramientas especiales que aumentan la productividad en la gestión de la información del sistema,
+estas caracteristicas pueden ahorrar horas de trabajo al digitador cuando se quiere hacer cambios en conjunto por ejemplo, todas esta herramientas estan descritas una sección del manual de usuario, o en la refencia rapida "features".
+
+Escalabilidad
+~~~~~~~~~~~~~
+
++ el sistema es modular, programado bajo una arquitectura flexible lo que permite integración de nuevas funcionalidades o nuevos modulos que provoquen un crecimiento en la complejidad del sistema.
+
+
+
