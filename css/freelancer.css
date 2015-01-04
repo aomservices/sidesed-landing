@@ -54,7 +54,7 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f126";
+    content: "\f090";
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -154,7 +154,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: rgba(24, 188, 156, 0.4);
 }
 
 hr.star-primary {
@@ -212,7 +212,17 @@ header {
     background-size: cover;
 }
 
+#about{
+    background: url('../img/lan2.jpg') no-repeat center center scroll;
+    position:relative;
+    background-size: cover;
+}
 
+
+.container{
+    padding-left:90px;
+    padding-right:90px;
+}
 
 .overlay {
   position: relative;
@@ -226,7 +236,7 @@ header {
   width:100%;
   height:100%;
   z-index:0;
-  background-color: rgba(0, 162, 105, 0.8);
+  background-color: rgba(24, 188, 156, 0.8);
 }
 
 header .container {
