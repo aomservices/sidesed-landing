@@ -206,13 +206,36 @@ hr.star-5:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    /*background: #18bc9c;*/
+    background: url('../img/main.png') no-repeat center center scroll;
+    position:relative;
+    background-size: cover;
+}
+
+
+
+.overlay {
+  position: relative;
+}
+
+.overlay:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:0;
+  background-color: rgba(0, 162, 105, 0.8);
 }
 
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
+
 }
+
+
 
 header img {
     display: block;
@@ -249,7 +272,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
+        padding: 20px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -375,6 +398,7 @@ section.success {
     }
 }
 
+
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
@@ -382,6 +406,21 @@ section.success {
     color: #fff;
     background: 0 0;
     transition: all .3s ease-in-out;
+    margin-right: 12px;
+}
+
+.btn-outline2 {
+    margin-top: 15px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+    margin-right: 12px;
+}
+
+.btn-outline2:hover{
+    background:rgba(215, 255, 194, 0.3);
 }
 
 .btn-outline:hover,
