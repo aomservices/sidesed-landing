@@ -37,9 +37,9 @@ h2,
 h3,
 h5,
 h6 {
-    text-transform: uppercase;
+
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 hr.star-light,
@@ -212,17 +212,28 @@ header {
     background-size: cover;
 }
 
+.callout{
+    border-bottom: 1px dotted #CCC;
+}
+
+.callout:hover {
+    text-decoration: none;
+}
+
+
 #about{
     background: url('../img/lan2.jpg') no-repeat center center scroll;
     position:relative;
     background-size: cover;
 }
 
-
-.container{
-    padding-left:90px;
-    padding-right:90px;
+.copy-main{
+    font-size:30px;
+    text-align:center;
+    padding:1em;
 }
+
+
 
 .overlay {
   position: relative;
