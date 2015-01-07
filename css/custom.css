@@ -1,0 +1,258 @@
+@import 'freelancer.css';
+
+body{
+	font-family: 'proxima-nova', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+footer p {
+	padding: 0;
+	margin: 0;
+}
+footer p a{
+	color: white;
+}
+footer .footer-col .title{
+	cursor: pointer;
+	padding: 0 0 1em 0;
+}
+footer .footer-below, img{
+	cursor: pointer;
+}
+header{
+	background-image: url(../img/main2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0 -200px;
+}
+header .container{
+	padding-top: 150px;
+	padding-bottom: 120px;
+}
+header .intro-text{
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+header .intro-text .calltoaction{
+	padding: 2em 0 0 0;
+	margin: 0 0 3em 0;
+}
+header .intro-text .calltoaction .log-b{
+	color: white;
+	border-radius: 5px;
+	background: #18bc9c;
+	font-size: 1.2em;
+	padding: 0.6em 2.6em;
+}
+header .intro-text .calltoaction .log-b:hover{
+	background: #18bc9c;
+	color: white;
+	text-decoration: none;
+}
+header .intro-text .sol-b{
+	color: white;
+	font-size: 16px;
+	font-style: thin;
+	border-bottom: 1px dotted #CCC;
+}
+header .intro-text .copy-main{
+	font-size: 1.4em;
+	font-style: thin;
+	padding: 15px;
+	text-shadow: 0 1px 1px rgba(52,152,219,0.1);
+}
+header .intro-text .name{
+	font-size: 3.2em;
+	font-weight: 400;
+	text-shadow: 0 2px 2px rgba(24, 188, 156, 0.4);
+}
+header .intro-text .sol-b:hover {
+		text-decoration:none;
+}
+#sobresidesed .show-more:hover{
+	background: #18bc9c;
+	border-radius: 5px;
+	padding: 4px 10px;
+	text-decoration: none;
+}
+section{
+	padding: 6em 0;
+	z-index: 3500;
+}
+section h3{
+	font-size: 1.6em;
+	font-weight: 400;
+	padding: 0;
+}
+#beneficios{
+	padding: 0 0 6em 0;
+}
+#caracteristicas p, #portafolio p{
+	padding: 0.2em 0;
+}
+#caracteristicas p a, #experiencia .fct, #ingresar .login, #portafolio .btp{
+	background: #18bc9c;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0 auto;
+	padding: 0.5em 1.5em;
+	text-align: center;
+}
+#caracteristicas p a:hover, #experiencia .fct:hover, #ingresar .login:hover, #portafolio .btp:hover{
+	background: #1a242f;
+	color: white;
+	text-decoration: none;
+}
+#caracteristicas .full-msg{
+	background: #2c3e50;
+	color: white;
+	margin: 4em 0 0 0;
+	padding: 4em 0;
+}
+#caracteristicas figure:hover{
+	transform:rotate(360deg);
+	transition-duration: 1s;
+	-webkit-transition-duration: 1s;
+	-webkit-transform:rotate(360deg);
+}
+#clientes .customers img{
+	margin: 0;
+	padding: 0 1em;
+	text-align: center;
+	vertical-align: middle;
+}
+#contacto{
+	background: #18bc9c;
+	color: white;
+}
+#contacto p{
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+#contacto .t-con{
+	padding: 0 0 2em 0;
+}
+#contacto .small{
+	margin: 0 0 1.2em 0;
+	padding: 0 0 1.2em 0;
+}
+#experiencia{
+	background: #ECF0F1;
+}
+#experiencia h3{
+	cursor: pointer;
+	padding: 0 0 2em 0;
+}
+#experiencia h4, h5{
+	cursor: pointer;
+	display: inline-block;
+	margin: 0;
+	padding: 5px 0;
+	vertical-align: middle;
+}
+#experiencia h5{
+	background: #2c3e50;
+	border-radius: 5px;
+	color: white;
+	padding: 5px 12px;
+}
+#experiencia img{
+	border-radius: 5px;
+	border: 3px solid #18bc9c;
+	width: 100%;
+}
+#experiencia p{
+	font-style: thin;
+	padding: 0 0 1em 0;
+}
+#experiencia .eright{
+	float: right;
+	padding: 4em 0;
+	text-align: right;
+}
+#experiencia .fct{
+	background: #18bc9c;
+	border-radius: 5px;
+	color: white;
+	padding: 5px 1.5em;
+}
+#ingresar{
+	background: #ECF0F1;
+	border-top: 3px solid #18bc9c;
+}
+#ingresar p{
+	padding: 0 0 1.5em 0;
+	text-align: center;
+}
+#ingresar .description{
+	font-size: 16px;
+	margin-bottom: 1.2em;
+	text-align: justify;
+}
+#portafolio .pt{
+	margin-bottom: 1.5em;
+}
+#sobresidesed{
+	background: #ECF0F1;
+	color: #2c3e50;
+	font-style: thin;
+	padding: 6em 0;
+}
+#sobresidesed .show-more{
+	background: #2c3e50;
+	border-radius: 5px;
+	color: white;
+	font-size: 13px;
+	padding: 4px 10px;
+}
+.bp{
+	border: 2px solid white;
+	border-radius: 5px;
+	color: white;
+	line-height: 60px;
+	padding: 0.5em 2em;
+}
+.bp:hover{
+	background: white;
+	color: #18bc9c;
+	text-decoration: none;
+}
+
+.bp-right{
+	margin-left:90px;
+}
+.navbar-nav, .navbar-collapse{
+	margin: 0;
+	padding: 0;
+}
+.navbar-default{
+	background: transparent;
+	margin: 0;
+	padding: 0;
+}.nav>li>a{
+	margin: 15px 2px;
+	padding: 5px 10px;
+}
+.navbar-default .navbar-nav > li > a{
+	background: none;
+	font-size: 14px;
+}
+.navbar-default .navbar-nav > li > a:hover{
+	background: white;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+.navbar-default .navbar-nav>.active>a:focus{
+	background: white;
+	border-radius: 5px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+	background: white;
+	color: #18bc9c;
+	border-radius: 5px;
+}
