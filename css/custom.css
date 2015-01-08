@@ -124,6 +124,7 @@ section h3{
 	padding: 0 1em;
 	text-align: center;
 	vertical-align: middle;
+	opacity:0.8;
 }
 #contacto{
 	background: #18bc9c;
@@ -210,6 +211,14 @@ section h3{
 	font-size: 13px;
 	padding: 4px 10px;
 }
+
+#logo-brand{
+	float:left;
+	width:50px;
+	margin-top:3.5px;
+	margin-right:3.5px;
+}
+
 .bp{
 	border: 2px solid white;
 	border-radius: 5px;
