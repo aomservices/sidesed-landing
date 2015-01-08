@@ -35,7 +35,7 @@ header .intro-text{
 	padding: 0;
 }
 header .intro-text .calltoaction{
-	padding: 2em 0 0 0;
+	padding: 5em 0 0 0;
 	margin: 0 0 3em 0;
 }
 header .intro-text .calltoaction .log-b{
@@ -46,8 +46,8 @@ header .intro-text .calltoaction .log-b{
 	padding: 0.6em 2.6em;
 }
 header .intro-text .calltoaction .log-b:hover{
-	background: #18bc9c;
-	color: white;
+	background: white;
+	color: #18bc9c;
 	text-decoration: none;
 }
 header .intro-text .sol-b{
@@ -55,6 +55,12 @@ header .intro-text .sol-b{
 	font-size: 16px;
 	font-style: thin;
 	border-bottom: 1px dotted #CCC;
+}
+header .intro-text .sol-b:hover{
+	background: white;
+	border-radius: 5px;
+	color: #18bc9c;
+	padding: 5px 1em;
 }
 header .intro-text .copy-main{
 	font-size: 1.4em;
@@ -70,12 +76,6 @@ header .intro-text .name{
 header .intro-text .sol-b:hover {
 		text-decoration:none;
 }
-#sobresidesed .show-more:hover{
-	background: #18bc9c;
-	border-radius: 5px;
-	padding: 4px 10px;
-	text-decoration: none;
-}
 section{
 	padding: 6em 0;
 	z-index: 3500;
@@ -88,8 +88,19 @@ section h3{
 #beneficios{
 	padding: 0 0 6em 0;
 }
+#beneficios h3{
+	color: #18bc9c;
+	font-size: 1.1em;
+}
+#beneficios p{
+	font-size: 1em;
+}
 #caracteristicas p, #portafolio p{
-	padding: 0.2em 0;
+	font-size: 1em;
+	padding: 0.2em 0.5em;
+}
+#caracteristicas .copy-main{
+	font-size: 1.5em;
 }
 #caracteristicas p a, #experiencia .fct, #ingresar .login, #portafolio .btp{
 	background: #18bc9c;
@@ -102,8 +113,11 @@ section h3{
 	padding: 0.5em 1.5em;
 	text-align: center;
 }
+#experiencia .fct{
+	margin: 0 0 1.5em 0;
+}
 #caracteristicas p a:hover, #experiencia .fct:hover, #ingresar .login:hover, #portafolio .btp:hover{
-	background: #1a242f;
+	background: #2c3e50;
 	color: white;
 	text-decoration: none;
 }
@@ -124,6 +138,7 @@ section h3{
 	padding: 0 1em;
 	text-align: center;
 	vertical-align: middle;
+	opacity:0.8;
 }
 #contacto{
 	background: #18bc9c;
@@ -146,20 +161,20 @@ section h3{
 }
 #experiencia h3{
 	cursor: pointer;
-	padding: 0 0 2em 0;
+	padding: 0 0 1em 0;
 }
 #experiencia h4, h5{
 	cursor: pointer;
 	display: inline-block;
 	margin: 0;
-	padding: 5px 0;
+	padding: 5px 5px 0 0;
 	vertical-align: middle;
 }
 #experiencia h5{
 	background: #2c3e50;
 	border-radius: 5px;
 	color: white;
-	padding: 5px 12px;
+	padding: 5px 1em;
 }
 #experiencia img{
 	border-radius: 5px;
@@ -167,7 +182,7 @@ section h3{
 	width: 100%;
 }
 #experiencia p{
-	font-style: thin;
+	font-size: 1em;
 	padding: 0 0 1em 0;
 }
 #experiencia .eright{
@@ -207,8 +222,22 @@ section h3{
 	background: #2c3e50;
 	border-radius: 5px;
 	color: white;
-	font-size: 13px;
+	font-size: 14px;
 	padding: 4px 10px;
+}
+#sobresidesed .show-more:hover{
+	background: #18bc9c;
+	border-radius: 5px;
+	padding: 4px 10px;
+	text-decoration: none;
+}
+#logo-brand{
+	float:left;
+	margin: 12px 5px 0 0;
+	width: 40px;
+}
+#logo-brand, a{
+	vertical-align: top;
 }
 .bp{
 	border: 2px solid white;
@@ -222,7 +251,6 @@ section h3{
 	color: #18bc9c;
 	text-decoration: none;
 }
-
 .bp-right{
 	margin-left:90px;
 }
@@ -234,7 +262,8 @@ section h3{
 	background: transparent;
 	margin: 0;
 	padding: 0;
-}.nav>li>a{
+}
+.nav>li>a{
 	margin: 15px 2px;
 	padding: 5px 10px;
 }
@@ -256,3 +285,4 @@ section h3{
 	color: #18bc9c;
 	border-radius: 5px;
 }
+
